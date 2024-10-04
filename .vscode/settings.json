@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Maze.sln"
+    "dotnet.defaultSolution": "Maze4Jack.sln"
 }

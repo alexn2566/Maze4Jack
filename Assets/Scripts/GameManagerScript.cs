@@ -11,9 +11,11 @@ public class GameManagerScript : MonoBehaviour
     public int max_coins = 0;
 
     public GameObject Door;
+    public GameObject Key;
     void Start()
     {
         Door.SetActive(false);
+        Key.SetActive(false);
         max_coins = cur_coins;
         UpdateUI();
 
@@ -30,7 +32,10 @@ public class GameManagerScript : MonoBehaviour
             //coinsLeft.text = "Coins Left: " + cur_coins.ToString("D3") + "/" + max_coins.ToString("D3");
             coinsLeft.text = "Coins Left: " + cur_coins.ToString() + "/" + max_coins.ToString();
         }
-        else if(cur_coins <= 0){
+        if(cur_coins < 4){
+            Key.SetActive(true);
+        }
+        if(cur_coins <= 0){
             Door.SetActive(true);
         }
         

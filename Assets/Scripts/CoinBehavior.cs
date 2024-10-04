@@ -6,7 +6,7 @@ public class CoinBehavior : MonoBehaviour
 {
     
     GameManagerScript GMS;
-    public float rotateSpeed = 5f;
+    public float rotateSpeed = 2f;
 
     void Awake(){
         GMS = GameObject.Find("GameManager").GetComponent<GameManagerScript> ();
